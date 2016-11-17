@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin:0px;
+    /*font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif;*/
+
+    background: #333333 url(../img/bg.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    border-radius: 5px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    padding: 14px 18px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    border-radius: 5px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    padding: 14px 18px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    border-radius: 5px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    padding: 14px 18px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #00a7d1;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: #01c9fb;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+button[type=button] {
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: #01c9fb;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+button[type=button]:hover {
+    background-color: #00a7d1;
+}
