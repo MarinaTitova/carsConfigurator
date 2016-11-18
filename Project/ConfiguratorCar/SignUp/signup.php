@@ -8,7 +8,7 @@
 
 <body>
 
-<table bgcolor="#f2f2f2" style="padding:50px" align="center" width="550px">
+<table style="padding:50px" align="center" width="550px">
     <form action="" method="post">
         <td align="center" colspan="1"><a href="login.php"><button type="button">SignIN</button></a></td></tr>
 
@@ -16,7 +16,7 @@
             <td align="left" colspan="2"> <h1>Registration</h1> </td>
         </tr>
         <tr>
-            <td> Login : </td><td><input type="email" name="email"></td>
+            <td> Login : </td><td><input type="text" name="login"></td>
         </tr>
         <tr>
             <td> Password : </td><td><input type="password" name="password"></td>
@@ -37,12 +37,12 @@ if(isset($_POST["submit"]))
     //Including dbconfig file.
     include 'configDB.php';
 
-    $email = $_POST["email"];
+    $login = $_POST["login"];
     $password = $_POST["password"];
 
     $EncryptPassword = md5($password);
 
-    mysql_query("INSERT INTO signup (email,password) VALUES ('$email','$EncryptPassword')");
+    mysql_query("INSERT INTO users_login (login,password) VALUES ('$login','$EncryptPassword')");
 
     echo '<center> Sign Up form successfully submitted. </center>';
 
