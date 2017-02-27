@@ -1,0 +1,193 @@
+body {
+    background: #333333 url(images/index.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.text {
+    font-size: 50px;
+    color: purple;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.btn-start{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px;
+    float: left;
+    background: #7FFF00;
+    position: absolute;
+    left: 14%;
+    top: 17%;
+    box-shadow:
+            0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
+            0px 0px 0px 7px #fff,
+            0px 0px 1px 8px rgba(188, 188, 188, 0.4),
+            0px 0px 0px 9px #fff;
+    transition: all 0.3s linear;
+}
+.btn-start span{
+    display: table-cell;
+    width: 250px;
+    height: 220px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 56px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #A03F16;
+    font-family: "Arvo", "Myriad Pro", "Trebuchet MS", sans-serif;
+    transition: all 0.3s linear;
+}
+.btn-start span:nth-child(1),.btn-start span:nth-child(3){
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 40px;
+    line-height: 36px;
+    opacity: 0;
+}
+.btn-start span:nth-child(1){
+    top: 30px;
+    left: -5px;
+    background: transparent url(/images/pc/PCicon.png) no-repeat center center;
+    opacity: 0.2;
+}
+.btn-start:hover{
+    background: #ADFF2F;
+    box-shadow:
+            0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
+            0px 0px 0px 7px #fff,
+            1px 4px 5px 8px rgba(188, 188, 188, 0.6),
+            0px 0px 0px 9px #fff;
+}
+.btn-start:hover span:nth-child(3){
+    opacity: 1;
+}
+.btn-start:hover span:nth-child(2){
+    transform: scale(0);
+    opacity: 0;
+}
+.btn-start:hover span:nth-child(1){
+    animation: rotate 1s linear;
+}
+.btn-start:active{
+    box-shadow:
+            0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
+            0px 0px 0px 7px #fff,
+            0px -1px 0px 8px rgba(188, 188, 188, 0.3),
+            0px 0px 0px 10px #fff;
+}
+.btn-login{
+    width: 300px;
+    height: 150px;
+    border-radius: 5%;
+    display: block;
+    margin: 50px;
+    float: left;
+    background: #7FFF00;
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    box-shadow:
+            0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
+            0px 0px 0px 7px #fff,
+            0px 0px 1px 8px rgba(188, 188, 188, 0.4),
+            0px 0px 0px 9px #fff;
+    transition: all 0.3s linear;
+}
+.btn-login span{
+    display: table-cell;
+    width: 255px;
+    height: 75px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 56px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #A03F16;
+    font-family: "Arvo", "Myriad Pro", "Trebuchet MS", sans-serif;
+    transition: all 0.3s linear;
+}
+.btn-login span:nth-child(1),.btn-login span:nth-child(3){
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    font-size: 30px;
+    line-height: 36px;
+    opacity: 0;
+}
+.btn-login span:nth-child(1){
+    top: 30px;
+    left: -5px;
+    background: transparent url(/images/pc/login.png) no-repeat center center;
+    opacity: 0.2;
+}
+.btn-login:hover{
+    background: #ADFF2F;
+    box-shadow:
+            0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
+            0px 0px 0px 7px #fff,
+            1px 4px 5px 8px rgba(188, 188, 188, 0.6),
+            0px 0px 0px 9px #fff;
+}
+.btn-login:hover span:nth-child(3){
+    opacity: 1;
+}
+.btn-login:hover span:nth-child(2){
+    transform: scale(0);
+    opacity: 0;
+}
+.btn-login:hover span:nth-child(1){
+    animation: rotate 1s linear;
+}
+.btn-login:active{
+    box-shadow:
+            0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
+            0px 0px 0px 7px #fff,
+            0px -1px 0px 8px rgba(188, 188, 188, 0.3),
+            0px 0px 0px 10px #fff;
+}
