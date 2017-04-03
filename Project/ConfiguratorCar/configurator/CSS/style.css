@@ -1,0 +1,208 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+
+ 
+  font-family: Lato;
+
+ 
+}
+
+h1 {
+   text-shadow: 2px 2px 4px black, 0 0 1em red;
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+padding-bottom: 30px;
+  
+}
+.tabs1 {
+   padding-top: 20px;
+padding-bottom: 200px;
+   float: none;
+  list-style: none;
+  position: relative;
+ text-align: left;
+  width: 700px;
+}
+.tabs {
+
+  float: none;
+  list-style: none;
+  position: relative;
+  text-align: left;
+  width: 700px;
+}
+#submit{
+   margin-top: 20px;
+  color:#b51717;
+  border: 2px;
+    width: 200px;
+    height: 30px;
+    margin-left: 220px;
+ border-radius: 10px 10px 10px 10px; 
+ cursor: pointer;
+     
+}
+#submit:hover{
+  background-color:#423131;
+
+}
+.tabs1 li {
+ vertical-align:middle;
+  float: left;
+  display: block;
+}
+.tabs1 li input{
+margin-left: 30px;
+}
+.tabs li input{
+margin-left: 30px;
+}
+.tabs li {
+
+  float: left;
+  display: block;
+}
+.tabs input[name="tabs" ] {
+  position: absolute;
+  top: 10;
+  left: -700px;
+}
+.tabs1 input[name="tabs1" ] {
+  position: absolute;
+  top: 10;
+  left: -700px;
+}
+.tabs1 label {
+   padding-top: 100px;
+  display: block;
+  padding: 14px 21px;
+  font-size: 20px;
+font-family: fantasy;
+   text-shadow: 5px 5px 7px black, 0 0 1em white;
+  font-weight: normal;
+  text-transform: uppercase;
+  background:  #5d5b5c;;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  border-radius: 20px 20px 20px 20px; 
+
+}
+.tabs label {
+  
+  display: block;
+  padding: 14px 21px;
+  font-size: 20px;
+  font-family: fantasy;
+   text-shadow: 5px 5px 7px black, 0 0 1em white;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #5d5b5c;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  border-radius: 20px 20px 0px 0; 
+
+}
+.tabs label:hover {
+  background: #6d2b2b;
+}
+.tabs1 label:hover {
+  background: #6d2b2b;
+}
+
+.tabs1 .tab-content {  
+ 
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  background: grey;
+   border-radius: 40px 40px 0px 0px; 
+}
+
+.tabs .tab-content {
+
+display: none;
+  z-index: 2;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: grey;
+   border-radius: 0px 0px 40px 40px; 
+}
+.tab-content p{
+   width: 100%;
+  text-align: center;
+     text-shadow: 5px 5px 7px black, 0 0 1em white;
+}
+
+.tabs [id^="tab"]:checked + label {
+
+  top: 0;
+  padding-top: 17px;
+  background: #423131;
+}
+.tabs1 [id^="tab1"]:checked + label {
+
+  top: 0;
+  padding-top: 17px;
+  background: #423131;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+
+  display: block;
+}
+.tabs1 [id^="tab1"]:checked ~ [id^="tab-content"] {
+
+  display: block;
+}
+
+
+.back-menu button{
+     display: block;
+    margin-left: 46%;
+
+   position: fixed;
+   top: 92%;
+text-align: center;
+   color:#b51717;
+  border: 2px;
+    width: 100px;
+    height: 30px;
+  font-weight: 900;
+ border-radius: 10px 10px 10px 10px; 
+  background-color: #28a745;
+
+}
+.back-menu {
+padding-bottom: 500px;
+}
+
+.back-menu button:hover{
+cursor: pointer;
+  background-color: #23de4d;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Car configurator</title>
+  <style>
+   body {
+    background-image: url(images/fon.png); /* Путь к фоновому изображению */
+  
+   }
+  </style>
+  
+      <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+  <h1>Car   configurator</h1>
+
+<center>
+<ul class="tabs1" role="tablist">
+   <li>
+        <input type="radio" name="tabs1" id="tab11" checked/>
+        <label for="tab11"role="tab" aria-selected="false"   aria-controls="panel3"     tabindex="0">BMW</label>
+        <div id="tab-content3"      class="tab-content"     role="tabpanel"     aria-labelledby="specification"      aria-hidden="true">
+         <p> <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+<!-- Сюда всавляются марки машин BMW--> 
+          <input type="radio" name="dzen"  checked > X6 M
+          <input  type="radio" name="dzen"> X6
+          <input type="radio" name="dzen">  X5
+         <input type="radio" name="dzen" > X5 M
+          <input  type="radio" name="dzen"> X4
+          <input type="radio" name="dzen" > X3<br> </form> </p>
+        </div>
+   </li>
+   <li>
+        <input type="radio" name="tabs1" id="tab12"  />
+        <label for="tab12"       role="tab"     aria-selected="true"      aria-controls="panel1"         tabindex="0">Opel</label>
+        <div id="tab-content2"        class="tab-content"     role="tabpanel"      aria-labelledby="description"         aria-hidden="false">
+        <p><form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+<!-- Сюда всавляются марки машин Opel--> 
+          <input type="radio" name="dzen" checked > Vectra
+          <input  type="radio" name="dzen"> Corsa
+          <input type="radio" name="dzen"> Astra<br>  </form> </p>
+        
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="tabs1" id="tab13" />
+        <label for="tab13"         role="tab"      aria-selected="false"     aria-controls="panel2"     tabindex="0">Ford</label>
+        <div id="tab-content1"          class="tab-content"           role="tabpanel"        aria-labelledby="specification"            aria-hidden="true">
+          <p><form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+<!-- Сюда всавляются марки машин Ford-->     
+           <input type="radio" name="dzen"  checked > Galaxy
+           <input  type="radio" name="dzen"> Mondeo
+           <input type="radio" name="dzen"> Transit<br> </form> </p>
+    </li>
+
+    <li>
+        <input type="radio" name="tabs1" id="tab14" />
+        <label for="tab14"         role="tab"      aria-selected="false"     aria-controls="panel2"     tabindex="0">Audi</label>
+        <div id="tab-content1"          class="tab-content"           role="tabpanel"        aria-labelledby="specification"            aria-hidden="true">
+          <p><form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+<!-- Сюда всавляются марки машин Ford-->     
+           <input type="radio" name="dzen"  checked > A1
+           <input  type="radio" name="dzen"> A2
+            <input type="radio" name="dzen" > A3
+           <input  type="radio" name="dzen"> A4
+            <input type="radio" name="dzen" > A5
+          
+           <input type="radio" name="dzen"> Coupe<br> </form> </p>
+    </li>
+
+</ul>
+
+<ul class="tabs" role="tablist">
+    <!-- Элемент списка-характеристика-->   
+      <li>
+        <input type="radio" name="tabs" id="tab1" checked/>
+        <label for="tab1"        role="tab"               aria-selected="false"             aria-controls="panel3"              tabindex="0">Body</label>
+        <div id="tab-content1"         class="tab-content"         role="tabpanel"         aria-labelledby="specification"          aria-hidden="true">
+          <p>Choose a body <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+            <input type="radio" name="dzen"  checked > Black
+            <input  type="radio" name="dzen"> Red
+            <input type="radio" name="dzen"> White<br></p>
+            <input type="submit" value="Accept"id="submit" >
+           </form> 
+        </div>
+    </li>
+  <!-- Элемент списка-характеристика-->   
+      <li>
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2"        role="tab"               aria-selected="false"             aria-controls="panel3"              tabindex="0">Color</label>
+        <div id="tab-content2"         class="tab-content"         role="tabpanel"         aria-labelledby="specification"          aria-hidden="true">
+          <p>Choose a color <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+            <input type="radio" name="dzen"  checked > Black
+            <input  type="radio" name="dzen"> Red
+            <input type="radio" name="dzen"> White<br></p>
+            <input type="submit" value="Accept"id="submit" >
+           </form> 
+        </div>
+    </li>
+      <!-- Элемент списка-характеристика-->  
+    <li>
+        <input type="radio" name="tabs" id="tab3"  />
+        <label for="tab3"         role="tab"     aria-selected="false"      aria-controls="panel1"     tabindex="0">Disk</label>
+        <div id="tab-content3"   class="tab-content"     role="tabpanel"   aria-labelledby="description"     aria-hidden="false">
+         <p>Choose a disk</p> <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+            <input  type="radio" name="dze" checked> 15
+            <input  type="radio" name="dze"> 16
+            <input  type="radio" name="dze"> 17<br>
+            <input type="submit" value="Accept"id="submit" >
+           </form> 
+        </div>
+    </li>
+      <!-- Элемент списка-характеристика-->  
+    <li>
+        <input type="radio" name="tabs" id="tab4" />
+        <label for="tab4"        role="tab"        aria-selected="false"       aria-controls="panel2"        tabindex="0">Transmission</label>
+        <div id="tab-content4"     class="tab-content"   role="tabpanel"     aria-labelledby="specification"      aria-hidden="true">
+          <p>Choose a taransmission</p>  <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+             <input  type="radio" name="dz" checked> 15
+             <input type="radio" name="dz"> 16
+             <input  type="radio" name="dz"> 17<br>
+            <input type="submit" value="Accept" id="submit" >
+           </form> 
+        </div>
+    </li>
+ <!-- Элемент списка-характеристика-->  
+    <li>
+        <input type="radio" name="tabs" id="tab5" />
+        <label for="tab5"        role="tab"        aria-selected="false"       aria-controls="panel2"        tabindex="0">Engine</label>
+        <div id="tab-content5"     class="tab-content"   role="tabpanel"     aria-labelledby="specification"      aria-hidden="true">
+          <p>Choose a engine</p>  <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
+             <input  type="radio" name="dz" checked> 15
+             <input type="radio" name="dz"> 16
+             <input  type="radio" name="dz"> 17<br>
+            <input type="submit" value="Accept" id="submit" >
+           </form> 
+        </div>
+    </li>
+
+</ul>
+
+
+ <br style="clear: both;" />
+
+
+<div  class="back-menu"  >
+  <!-- Кнопка перехода на главное меню-->   
+<a href="Переход на главное меню"><button type="button"> Back</button></a>
+        
+        </div>
+
+ </center>
+</body>
+</html>
