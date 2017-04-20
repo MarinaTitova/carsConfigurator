@@ -78,10 +78,10 @@
     <!-- Элемент списка-характеристика-->   
       <li>
         <input type="radio" name="tabs" id="tab1" checked/>
-        <label for="tab1"        role="tab"               aria-selected="false"             aria-controls="panel3"              tabindex="0">Body</label>
+        <label for="tab1"        role="tab"               aria-selected="false"             aria-controls="panel3"    id="g"          tabindex="0">Body</label>
         <div id="tab-content1"         class="tab-content"         role="tabpanel"         aria-labelledby="specification"          aria-hidden="true">
           <p>Choose a body <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
-            <input type="radio" name="dzen"  checked > Black
+
             <input  type="radio" name="dzen"> Red
             <input type="radio" name="dzen"> White<br></p>
             <input type="submit" value="Accept"id="submit" >
@@ -94,8 +94,12 @@
         <label for="tab2"        role="tab"               aria-selected="false"             aria-controls="panel3"              tabindex="0">Color</label>
         <div id="tab-content2"         class="tab-content"         role="tabpanel"         aria-labelledby="specification"          aria-hidden="true">
           <p>Choose a color <form name="test" method="post" action="ФАЙЛ ДЛЯ БД.php">
-            <input type="radio" name="dzen"  checked > Black
-            <input  type="radio" name="dzen"> Red
+          
+          
+       
+              <layer>   <div class="black">
+           <input type="radio" name="dzen"  id="black" >black<span></span>
+          </div></layer>
             <input type="radio" name="dzen"> White<br></p>
             <input type="submit" value="Accept"id="submit" >
            </form> 

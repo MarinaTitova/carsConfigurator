@@ -26,6 +26,30 @@ h1 {
 padding-bottom: 30px;
   
 }
+
+layer{
+    width: 50px;
+    color:red;
+    height: 50px;
+    display: block;
+    position: relative;
+
+   } 
+    layer input[type="radio"]+span{
+      display: none;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    color:blue;
+    height: 100%;
+    background: url(images/fon.png) no-repeat;
+    cursor: pointer;
+   }
+   input[type="radio"]:checked + span {
+    background-position: 0 -26px; 
+   }
+
+
 .tabs1 {
    padding-top: 20px;
 padding-bottom: 200px;

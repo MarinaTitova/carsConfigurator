@@ -3,39 +3,40 @@
 <head>
 	<title>Car cofiguration</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script src="http://yandex.st/jquery/1.10.2/jquery.min.js"></script>
+	<script src="my.script.js"></script>
+
 	<link rel="stylesheet" href="node_modules/fonts/font-awesome.min.css">
-	<link rel="stylesheet" href="node_modules/slider-pro/dist/css/slider-pro.min.css">
+
 	<link rel="stylesheet" href="CSS/contact.css">
+
 </head>
 <body>
-	<div class="container-fluid menu-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 logo">
-					<a href="Contact.html">Kastle<span class="Inc"> Inc</span></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid menu-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<ul class="top-menu">
-						<li><a href="Ссылка на главную страницу">Home</a></li>
-						<li><a href="About.html">About</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<?php
+	include "database.php";
+	connect();
+	session_start();
+	$usName = $_SESSION['user_name'];
+	?>
+
+	<ul class="nav">
+	  <li><a href="http://unrealcss.ru">Main Page</a></li>
+	  <li><a href="/ConfiguratorCars/index.html">Home</a></li>
+	  <li><a href="/ConfiguratorCars/3Dviewer/index.html">3D view</a></li>
+	  <li><a class="active">Configurator Cars</a></li>
+	  <li><a href="/ConfiguratorCars/About.html">About</a></li>
+	  <li><a href="/ConfiguratorCars/Contact.html">Contacts</a></li>
+	  <li><a href="/ConfiguratorCars/faq/">FAQ</a></li>
+	  <li><a href="https://docs.google.com/spreadsheets/d/1X2Yt8lmqpo89QTK1yK8cM5cSRlmh34hd8xqzl5Bzef8/edit#gid=0">Google Table</a></li>
+	  <li style="float:right"><a href="/ConfiguratorCars/Account/authefication/logout.php"> Logout </a></li>
+	  <li style="float:right"> <a>  Hi, dear <?php echo $usName?> !</a>
+	</ul>
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 content">
-					<p >Our adress, Gikala 9 </p>
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=g2BF_8UCK2z_am0ip60eke9bx8bLmKDq&amp;width=1150&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+					<p >Address</p>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=g2BF_8UCK2z_am0ip60eke9bx8bLmKDq&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 				</div>
 				
 			</div>
@@ -66,6 +67,9 @@
 					</div>
 					<div>
 						<p class="comnt"><span class="user">Yaroshevich Dmitry</span> gr.450503, VMSiS</p>
+					</div>
+					<div>
+						<p class="comnt"><span class="user">Rotayko Vadim</span> gr.450501, VMSiS</p>
 					</div>
 				</div>
 				
